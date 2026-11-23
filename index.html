@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSpace — Portafolio UX / Interacción Hombre-Computadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- Índice de navegación -->
+    <header class="navbar">
+        <nav class="nav-container" aria-label="Navegación principal del portafolio">
+            <a href="#portada" class="nav-brand">EduSpace · Portafolio HCI</a>
+            <ul class="nav-links">
+                <li><a href="#investigacion">2. Investigación</a></li>
+                <li><a href="#definicion">3. Definición</a></li>
+                <li><a href="#ideacion">4. Ideación</a></li>
+                <li><a href="#prototipos">5. Prototipos</a></li>
+                <li><a href="#evaluaciones">6. Evaluaciones y Plan Demo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- =====================================================================
+         SECCIÓN 1: PORTADA
+         ===================================================================== -->
+        <section id="portada" class="hero" aria-labelledby="titulo-proyecto">
+            <div>
+                <span class="badge">Entrega Parcial · Noviembre 2026 · FIUNI</span>
+                <h1 id="titulo-proyecto">EduSpace</h1>
+                <p class="hero-problem">
+                    <strong>El problema:</strong> Los estudiantes de ingeniería pierden tiempo valioso de estudio
+                    buscando explicaciones paso a paso porque el material académico oficial suele estar disperso o
+                    incompleto.
+                </p>
+                <div class="hero-meta">
+                    <p><strong>Para quién es:</strong> Estudiantes universitarios de las carreras de ingeniería de la
+                        FIUNI (desde los primeros semestres hasta niveles avanzados) que preparan evaluaciones parciales
+                        y finales.</p>
+                    <p><strong>Integrantes del equipo:</strong> Diana Gutiérrez, Oscar Lezcano y David Cristaldo.</p>
+                </div>
+                <div class="hero-actions">
+                    <a href="https://www.figma.com/proto/6JXshp9UGSYImBFDKWsrTP/HCI-Prototipos?node-id=124-2247&p=f&t=pxmFL0vFPEdEqeyJ-1&scaling=min-zoom&content-scaling=fixed&page-id=124%3A1426"
+                        target="_blank" rel="noopener noreferrer" class="btn-primary">
+                        Explorar prototipo en alta fidelidad (Figma)
+                    </a>
+                    <a href="#evaluaciones" class="btn-secondary">
+                        Ver plan de prueba con la demo
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <figure>
+                    <img src="img/portada-alta-fidelidad.png"
+                        alt="Pantallas principales del prototipo de alta fidelidad de EduSpace mostrando el inicio con búsqueda rápida, resultados filtrados por explicaciones paso a paso y vista previa de apuntes">
+                    <figcaption>Vista general del prototipo de alta fidelidad de EduSpace (v1.0).</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- =====================================================================
+         SECCIÓN 2: INVESTIGACIÓN (EMPATIZAR)
+         ===================================================================== -->
+        <section id="investigacion" class="portfolio-section" aria-labelledby="titulo-investigacion">
+            <h2>2. Investigación (Empatizar)</h2>
+            <p>
+                Para comprender cómo estudian los estudiantes de ingeniería cuando enfrentan un examen parcial y evitar
+                diseñar sobre suposiciones, combinamos métodos cuantitativos y cualitativos con estudiantes de la FIUNI
+                (3.er a 9.no semestre).
+            </p>
+
+            <h3>Métodos y participantes</h3>
+            <ul>
+                <li><strong>Encuesta cuantitativa (n = 40):</strong> Formulario en línea aplicado a estudiantes de la
+                    FIUNI (predominantemente Ingeniería Informática e Ingeniería Civil, 18–25 años) sobre frecuencia de
+                    material disperso, dificultad para hallar explicaciones prácticas, situación laboral, traslados y
+                    becas.</li>
+                <li><strong>Entrevistas semiestructuradas (n = 5):</strong> Sesiones individuales de 12 preguntas
+                    abiertas con 4 estudiantes de Ingeniería Informática y 1 de Ingeniería Civil para profundizar en
+                    hábitos, emociones y estrategias de estudio.</li>
+                <li><strong>Síntesis mediante Diagrama de Afinidad:</strong> Codificación abierta asistida por IA y
+                    contrastada manualmente por el equipo para agrupar patrones y evitar sesgos de confirmación.</li>
+            </ul>
+
+            <h3>Hallazgos principales con evidencia</h3>
+            <div class="grid-3">
+                <div class="card">
+                    <span class="stat-number">36 / 40</span>
+                    <span class="card-title">Material disperso o incompleto</span>
+                    <p>El 90% de los encuestados indica que el material oficial (diapositivas, apuntes, libros) está "a
+                        veces" (57,5%) o "casi siempre" disperso al preparar un examen.</p>
+                </div>
+                <div class="card">
+                    <span class="stat-number">31 / 40</span>
+                    <span class="card-title">Falta de explicaciones paso a paso</span>
+                    <p>El 77,5% calificó entre 3 y 5 (escala 1 a 5) la dificultad para encontrar ejercicios prácticos
+                        resueltos paso a paso con claridad.</p>
+                </div>
+                <div class="card">
+                    <span class="stat-number">19 / 40</span>
+                    <span class="card-title">Alta presión por becas y tiempo</span>
+                    <p>El 47,5% depende de una beca con promedio mínimo y todos los entrevistados (5/5) reportaron
+                        estrés por falta de tiempo entre clases, trabajo o traslados.</p>
+                </div>
+            </div>
+
+            <blockquote>
+                “Lo que más cuesta es cuando el contenido teórico es extenso y tener que investigar términos nuevos
+                lleva mucho tiempo.” — Participante U1 (Entrevista)
+            </blockquote>
+            <blockquote>
+                “Tengo la beca y ya estoy con reconsideración... la espera de colectivo a veces lleva dos horas que
+                podrían destinarse a estudiar.” — Participantes U4 y U3 (Entrevistas)
+            </blockquote>
+
+            <figure>
+                <img src="img/mapa-afinidad.png"
+                    alt="Diagrama de afinidad agrupando los hallazgos de las entrevistas y encuestas en cuatro categorías: dispersión de material, falta de ejemplos paso a paso, presión por becas y falta de tiempo">
+                <figcaption>Evidencia: Diagrama de afinidad construido tras triangular entrevistas (n=5) y encuestas
+                    (n=40).</figcaption>
+            </figure>
+
+            <h3>Insight principal</h3>
+            <div class="decision-box">
+                <p><strong>Insight:</strong> Los estudiantes pierden mucho tiempo efectivo de estudio porque les cuesta
+                    encontrar explicaciones paso a paso claras y el material oficial está disperso o incompleto,
+                    obligándolos a combinar múltiples fuentes externas bajo alta presión académica.</p>
+                <p><strong>Decisión tomada a partir de la investigación:</strong> Descartamos crear un simple
+                    repositorio de archivos estáticos y decidimos enfocar el producto en un buscador móvil de
+                    <strong>explicaciones paso a paso validadas por la comunidad</strong>, organizadas por materia y
+                    unidad temática.
+                </p>
+            </div>
+
+            <p><a href="anexos/Documento_HCI_Empatizar_Definir.pdf" class="evidence-link">Descargar documento completo
+                    de investigación y guía de preguntas (PDF)</a></p>
+        </section>
+
+        <!-- =====================================================================
+         SECCIÓN 3: DEFINICIÓN DEL PROBLEMA (DEFINIR)
+         ===================================================================== -->
+        <section id="definicion" class="portfolio-section" aria-labelledby="titulo-definicion">
+            <h2>3. Definición del Problema (Definir)</h2>
+            <p>
+                A partir de los patrones detectados en la investigación, sintetizamos tres perfiles de usuario (User
+                Personas), su mapa de empatía y el recorrido actual (Customer Journey Map) para identificar el punto
+                exacto de fricción.
+            </p>
+
+            <h3>User Personas</h3>
+            <div class="stack-full">
+                <figure>
+                    <img src="img/persona-valentina.png"
+                        alt="Ficha de User Persona de Valentina Gómez Benítez, 20 años, estudiante de 5.º semestre de Ingeniería Civil en la FIUNI">
+                    <figcaption>Persona 1: Valentina Gómez (La estudiante organizada).</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/persona-camila.png"
+                        alt="Ficha de User Persona de Camila Rivas Ortiz, 19 años, estudiante de 3.er semestre de Ingeniería Informática en la FIUNI">
+                    <figcaption>Persona 2: Camila Rivas (La estudiante con poco tiempo).</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/persona-mateo.png"
+                        alt="Ficha de User Persona de Mateo González Acosta, 23 años, estudiante de 9.º semestre de Ingeniería Civil en la FIUNI">
+                    <figcaption>Persona 3: Mateo González (Busca comprender a fondo).</figcaption>
+                </figure>
+            </div>
+
+            <h3>Mapa de Empatía y Mapas de Viaje</h3>
+            <figure class="figure-compact">
+                <img src="img/mapa-empatia.png"
+                    alt="Mapa de empatía detallando qué piensan, sienten, escuchan, ven, dicen y hacen los estudiantes de ingeniería">
+                <figcaption>Evidencia: Mapa de empatía consolidado de los estudiantes.</figcaption>
+            </figure>
+
+            <div class="stack-full">
+                <figure>
+                    <img src="img/mapa-viaje-valentina.jpg"
+                        alt="Mapa de viaje del usuario Valentina Gómez mostrando sus etapas desde la necesidad hasta el parcial">
+                    <figcaption>Evidencia: Mapa de viaje — Valentina Gómez.</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/mapa-viaje-camila.jpg"
+                        alt="Mapa de viaje del usuario Camila Rivas señalando el punto de fricción y estrés en la búsqueda y filtrado de material">
+                    <figcaption>Evidencia: Mapa de viaje — Camila Rivas (punto crítico de fricción en búsqueda).
+                    </figcaption>
+                </figure>
+            </div>
+
+            <h3>Punto de Vista (POV) y pregunta "¿Cómo podríamos...?" (HMW)</h3>
+            <div class="card">
+                <p><strong>POV:</strong> El estudiante de ingeniería necesita acceder a explicaciones claras y material
+                    organizado debido a que actualmente pierde tiempo buscando materiales que se encuentran dispersos e
+                    incompletos.</p>
+                <p><strong>HMW:</strong> ¿Cómo podríamos reducir el tiempo que los estudiantes pierden buscando y
+                    procesando explicaciones claras cuando el material está disperso o incompleto?</p>
+            </div>
+
+            <h3>Trazabilidad: De hallazgos a Historias de Usuario y Requisitos</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Hallazgo de origen</th>
+                            <th>Historia de Usuario</th>
+                            <th>Requisitos Funcionales derivados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>31/40 tienen dificultad para encontrar ejercicios resueltos paso a paso y dudan de la
+                                calidad de fuentes externas.</td>
+                            <td><strong>HU 1:</strong> Como estudiante que no encuentra explicaciones claras, quiero
+                                localizar rápido recursos con explicaciones paso a paso, para comprender sin perder
+                                tiempo.</td>
+                            <td>
+                                <strong>RF 1.1:</strong> Filtrar recursos por tipo de contenido ("Explicación paso a
+                                paso", "Ejercicios resueltos").<br>
+                                <strong>RF 1.2:</strong> Mostrar valoración promedio de 1 a 5 estrellas.<br>
+                                <strong>RF 1.3:</strong> Vista previa interactiva de las primeras páginas sin descargar.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>36/40 señalan que los apuntes y diapositivas están dispersos entre múltiples plataformas
+                                y grupos.</td>
+                            <td><strong>HU 2:</strong> Como estudiante con material disperso e incompleto, quiero tener
+                                todo el contenido de la materia en un solo lugar, para no combinar varias fuentes cada
+                                vez.</td>
+                            <td>
+                                <strong>RF 2.1:</strong> Agrupar archivos y enlaces en un módulo único por materia y
+                                unidad temática.<br>
+                                <strong>RF 2.2:</strong> Buscador interno por títulos, etiquetas y contenido.<br>
+                                <strong>RF 2.3:</strong> Permitir adjuntar archivos PDF o imágenes desde un formulario
+                                centralizado.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Los estudiantes estudian en huecos cortos entre clases (20–40 min) y necesitan decidir
+                                rápido qué leer.</td>
+                            <td><strong>HU 3:</strong> Como estudiante que pierde tiempo buscando material, quiero
+                                identificar rápido qué recursos me sirven, para dedicar más tiempo a estudiar y menos a
+                                filtrarlos.</td>
+                            <td>
+                                <strong>RF 3.1:</strong> Mostrar estimación de tiempo de lectura (en minutos) y nivel de
+                                dificultad en cada tarjeta.<br>
+                                <strong>RF 3.2:</strong> Ordenar resultados por "Mayor relevancia", "Mejor valorados" y
+                                "Más recientes".
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p><strong>Requisitos No Funcionales clave:</strong> Aplicación móvil responsiva (RNF-ENT 01), archivos de
+                hasta 50 MB (RNF-DAT 02), cumplimiento de accesibilidad WCAG 2.1 Nivel AA (RNF-USU 02), localización de
+                material en menos de 3 clics y 40 segundos (RNF-UX 01) y puntaje SUS ≥ 75/100 (RNF-UX 02).</p>
+            <p><a href="anexos/POV_en_base_a_hallazgos_e_insights.pdf" class="evidence-link">Descargar matriz completa
+                    de POV, HMW y Requisitos (PDF)</a></p>
+        </section>
+
+        <!-- =====================================================================
+         SECCIÓN 4: IDEACIÓN (IDEAR)
+         ===================================================================== -->
+        <section id="ideacion" class="portfolio-section" aria-labelledby="titulo-ideacion">
+            <h2>4. Ideación (Idear)</h2>
+            <p>
+                Partiendo de la pregunta HMW, realizamos una lluvia de ideas divergente (7 propuestas iniciales),
+                priorizamos las 3 más viables y ejecutamos una sesión de bocetado rápido <strong>Crazy 8s</strong> sobre
+                la solución ganadora.
+            </p>
+
+            <h3>Alternativas consideradas y criterio de selección</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Idea priorizada</th>
+                            <th>Requisitos que cubre</th>
+                            <th>Decisión y justificación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1. Portal Académico Colaborativo (EduSpace)</strong></td>
+                            <td>Cubre el 100% (HU1, HU2, HU3 y RF 1.1–3.2).</td>
+                            <td><strong>Seleccionada:</strong> Es la única solución que ataca de raíz la dispersión del
+                                material y permite filtrar explicaciones paso a paso con valoración entre pares.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Carpeta compartida de Drive por materias</strong></td>
+                            <td>Cubre parcialmente HU2 (RF 2.1 y RF 2.3).</td>
+                            <td><strong>Descartada:</strong> No permite filtrar por "explicación paso a paso", carece de
+                                valoración por estrellas o tiempo de lectura y tiende a desordenarse.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Canales de YouTube en grupos de WhatsApp/Telegram</strong></td>
+                            <td>Atiende solo intercambio informal de enlaces.</td>
+                            <td><strong>Descartada:</strong> Los chats no permiten jerarquía por unidades temáticas ni
+                                búsquedas filtradas sobre apuntes PDF.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Crazy 8s y curaduría con vocabulario de diseño</h3>
+            <p>
+                Exploramos cuatro enfoques de interfaz mediante Crazy 8s: (1) Buscador minimalista estilo Google, (2)
+                Asistente conversacional con IA, (3) Comunidad con votación estilo Reddit y (4) Portal por línea de
+                comandos (CLI). Evaluamos cada boceto según <em>manipulación directa, affordance, retroalimentación,
+                    restricciones, significantes y mapeo</em>.
+            </p>
+
+            <figure>
+                <img src="img/crazy8s-bocetos.jpeg"
+                    alt="Hoja de bocetos en papel del ejercicio Crazy 8s mostrando cuatro variantes: buscador simple, chat con IA, tarjetas con votación estilo Reddit y portal CLI">
+                <figcaption>Evidencia: Bocetos generados durante la sesión de Crazy 8s.</figcaption>
+            </figure>
+
+            <div class="decision-box">
+                <p><strong>Decisión de diseño elegida:</strong> Adoptamos una <strong>arquitectura híbrida</strong> que
+                    combina la barra de búsqueda directa y filtros rápidos (Boceto 1) con tarjetas interactivas de
+                    calificación y comentarios anidados estilo comunidad (Boceto 3). Descartamos el chat puro con IA
+                    como interfaz principal porque los estudiantes entrevistados señalaron que las respuestas genéricas
+                    de IA muchas veces no coinciden con la metodología del profesor de la cátedra.</p>
+            </div>
+
+            <p><a href="anexos/Guia_para_Idear.pdf" class="evidence-link">Descargar documento completo de Ideación y
+                    tabla de curaduría (PDF)</a></p>
+        </section>
+
+        <!-- =====================================================================
+         SECCIÓN 5: EVOLUCIÓN DEL PROTOTIPO (PROTOTIPAR)
+         ===================================================================== -->
+        <section id="prototipos" class="portfolio-section" aria-labelledby="titulo-prototipos">
+            <h2>5. Evolución del Prototipo (Prototipar)</h2>
+            <p>
+                El diseño evolucionó en tres niveles de fidelidad, incorporando mejoras tras cada ronda de evaluación
+                antes de invertir esfuerzo en detalles visuales.
+            </p>
+
+            <h3>Evolución tarea por tarea: Papel → Wireframes → Alta Fidelidad</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Flujo / Tarea</th>
+                            <th>1. Prototipo en Papel</th>
+                            <th>2. Wireframe Digital (Figma IA)</th>
+                            <th>3. Alta Fidelidad (v1.0)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Tarea 1: Buscar y filtrar explicaciones</strong><br>(Pantallas 01, 02, 07, 08,
+                                09)</td>
+                            <td>Selector de materia, barra de búsqueda y chips de temas sugeridos. Sin botón de retorno
+                                ni estado de carga.</td>
+                            <td>Se incorporó el botón <code>← Volver</code> y una pantalla intermedia de carga
+                                (<code>Cargando...</code>) al aplicar el filtro "Mejor valorados".</td>
+                            <td>Se añadió un Dashboard de inicio con materias del semestre, autocompletado en tiempo
+                                real, skeleton screen de carga y tarjetas con puntaje promedio y cantidad de reseñas.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tarea 2: Previsualizar y guardar recurso</strong><br>(Pantallas 03, 04, 05)</td>
+                            <td>Metadatos básicos, recuadro de vista previa y botón "Guardar en mis recursos".</td>
+                            <td>Se estandarizó la vista previa del documento y se estructuró la sección inferior de
+                                comentarios.</td>
+                            <td>Se integró vista previa legible de fórmulas matemáticas en PDF, banner verde de
+                                confirmación (<code>#15803D</code>) con acceso directo y biblioteca "Mis Recursos"
+                                organizada por materias.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tarea 3: Valorar y comentar</strong><br>(Pantallas 06, 10, 11)</td>
+                            <td>5 estrellas dibujadas y caja de texto sin botón explícito de envío.</td>
+                            <td>Se añadió el botón visible <code>Publicar</code> / <code>Enviar valoración</code> y
+                                comentarios anidados (Carlos y Pedro).</td>
+                            <td>Se ampliaron las estrellas a áreas táctiles de 48×48 pt, se añadió confirmación
+                                inmediata de voto enviado e inserción en tiempo real del comentario publicado.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tarea 4: Subir material propio</strong><br>(Pantallas 12, 13)</td>
+                            <td>Flujo incorporado tras detectar la necesidad de contribución estudiantil.</td>
+                            <td>Formulario básico y pantalla de éxito sin vista previa del resultado.</td>
+                            <td>Formulario con etiquetas visibles sobre cada campo, ayuda de formatos (PDF/imagen) y
+                                pantalla de confirmación con tarjeta de previsualización y botón primario
+                                <code>Ver mis materiales publicados</code>.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="stack-full">
+                <figure>
+                    <img src="img/evolucion-papel.jpeg"
+                        alt="Bocetos en papel de las cuatro pantallas principales de EduSpace dibujados a mano">
+                    <figcaption>Etapa 1: Prototipo en papel.</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/evolucion-wireframes.png"
+                        alt="Wireframes en escala de grises generados en Figma mostrando búsqueda, resultados con estado de carga, detalle y valoración">
+                    <figcaption>Etapa 2: Wireframes digitales.</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/evolucion-alta-fidelidad.png"
+                        alt="Pantallas finales en alta fidelidad con paleta azul académico, tarjetas con estrellas, confirmación en verde y biblioteca Mis Recursos">
+                    <figcaption>Etapa 3: Prototipo de alta fidelidad.</figcaption>
+                </figure>
+            </div>
+
+            <h3>Sistema de Diseño y Accesibilidad (WCAG 2.1 AA)</h3>
+            <p>
+                Definimos un sistema de diseño unificado en Figma verificado con <strong>WebAIM Contrast
+                    Checker</strong> y auditado con nuestra checklist de accesibilidad antes de construir las 13
+                pantallas finales:
+            </p>
+            <ul>
+                <li><strong>Paleta de color accesible:</strong> Azul académico principal <code>#184965</code> (contraste
+                    9,38:1 sobre blanco), texto principal <code>#111827</code> (17,74:1), texto secundario
+                    <code>#4B5563</code> (7,56:1), éxito <code>#15803D</code> (5,13:1) y error <code>#B91C1C</code>
+                    (6,47:1).
+                </li>
+                <li><strong>Tipografía y escala:</strong> Familia <strong>Inter</strong> en 4 niveles jerárquicos
+                    (Título 24 pt Bold, Subtítulo 18 pt SemiBold, Cuerpo/Botones 16 pt, Metadatos 14 pt) con espaciado
+                    en múltiplos de 8 pt.</li>
+                <li><strong>Reglas de interacción y uso de IA:</strong> Máximo un botón primario relleno por pantalla
+                    (alto mínimo 48 pt), áreas táctiles ≥ 48×48 pt en estrellas y chips, etiquetas visibles encima de
+                    todos los inputs y estados de éxito/error acompañados siempre de ícono + texto. Corregimos
+                    manualmente los grises de bajo contraste y textos de relleno (<em>Lorem ipsum</em>) que había
+                    generado Figma AI.</li>
+            </ul>
+
+            <figure>
+                <img src="img/sistema-diseno-figma.png"
+                    alt="Guía visual del Sistema de Diseño de EduSpace en Figma mostrando paleta de colores, tipografía Inter, botones primarios/secundarios, campos de texto, banners y barra de navegación inferior">
+                <figcaption>Evidencia: Página del Sistema de Diseño en Figma (Fundamentos, Controles y Módulos
+                    EduSpace).</figcaption>
+            </figure>
+
+            <p>
+                <a href="anexos/Prototipos_a_Wireframes-HCI.pdf" class="evidence-link">Ver reporte Papel a Wireframes
+                    (PDF)</a> ·
+                <a href="anexos/Prototipo_Alta_Fidelidad.pdf" class="evidence-link">Ver documento completo de Alta
+                    Fidelidad y Checklist WCAG (PDF)</a>
+            </p>
+        </section>
+
+        <!-- =====================================================================
+         SECCIÓN 6: EVALUACIONES REALIZADAS Y PLAN DE PRUEBA CON DEMO
+         ===================================================================== -->
+        <section id="evaluaciones" class="portfolio-section" aria-labelledby="titulo-evaluaciones">
+            <h2>6. Evaluaciones Realizadas y Plan de Prueba con la Demo</h2>
+
+            <h3>6.1 Evaluación por inspección del prototipo en papel (Coevaluación)</h3>
+            <p>
+                El 26 de octubre de 2026, un equipo evaluador externo (Camila Grahl, Facundo Garay y Braian Miete)
+                realizó un <strong>Recorrido Cognitivo</strong> (4 tareas) y una <strong>Evaluación Heurística</strong>
+                sobre nuestro prototipo en papel v1. Los hallazgos se consolidaron y corrigieron al pasar a wireframes:
+            </p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Problema detectado</th>
+                            <th>Ubicación</th>
+                            <th>Heurística / Paso</th>
+                            <th>Severidad</th>
+                            <th>Cambio implementado en wireframes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ausencia de botón visible para volver atrás o regresar a la pantalla anterior.</td>
+                            <td>Pantallas 1, 2 y 4</td>
+                            <td>Control y libertad del usuario</td>
+                            <td><span class="sev sev-3">3 · Mayor</span></td>
+                            <td>Se añadió el botón visible <code>← Volver</code> en la esquina superior izquierda de
+                                todas las pantallas secundarias.</td>
+                        </tr>
+                        <tr>
+                            <td>Falta de botón explícito para enviar el comentario redactado.</td>
+                            <td>Pantalla 4 (Valoración)</td>
+                            <td>Recorrido Cognitivo · Tarea 4</td>
+                            <td><span class="sev sev-2">2 · Menor</span></td>
+                            <td>Se incorporó el botón <code>Publicar</code> / <code>Enviar valoración</code> junto al
+                                campo de texto.</td>
+                        </tr>
+                        <tr>
+                            <td>Falta de retroalimentación visual mientras se actualiza la lista al filtrar.</td>
+                            <td>Pantalla 2 (Resultados)</td>
+                            <td>Visibilidad del estado del sistema</td>
+                            <td><span class="sev sev-1">1 · Cosmético</span></td>
+                            <td>Se diseñó una vista de carga con spinner y mensaje
+                                <code>Cargando... Aplicando filtro</code>.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Título redundante "Comentarios e hilos" generaba ruido visual.</td>
+                            <td>Pantallas 3 y 4</td>
+                            <td>Diseño estético y minimalista</td>
+                            <td><span class="sev sev-1">1 · Cosmético</span></td>
+                            <td>Se simplificó el encabezado únicamente a <code>Comentarios</code> manteniendo la
+                                indentación de respuestas.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><a href="anexos/coevaluacionheuristica.pdf" class="evidence-link">Descargar informe original de Recorrido
+                    Cognitivo y Evaluación Heurística (PDF)</a></p>
+
+            <h3>6.2 Prueba de usabilidad con wireframes de baja fidelidad</h3>
+            <p>
+                Con el wireframe navegable corregido realizamos una prueba formativa de pensamiento en voz alta con
+                <strong>3 estudiantes de 7.º semestre</strong> externos al equipo, evaluando 4 escenarios. Satisfacción
+                promedio inicial: <strong>3,7 / 5</strong>.
+            </p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Problema observado en prueba con usuarios</th>
+                            <th>Tarea</th>
+                            <th>Participantes</th>
+                            <th>Severidad</th>
+                            <th>Cambio aplicado hacia Alta Fidelidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Falta de ejemplo visual de cómo queda publicado el apunte tras subirlo.</td>
+                            <td>Tarea 4 (Subir material)</td>
+                            <td>3 de 3</td>
+                            <td><span class="sev sev-2">2 · Menor</span></td>
+                            <td>Se agregó una tarjeta de vista previa ("Así se verá en la comunidad") en la pantalla de
+                                confirmación (Pantalla 13).</td>
+                        </tr>
+                        <tr>
+                            <td>Dificultad para encontrar "Mis Recursos" y saber dónde aparecen los apuntes subidos.
+                            </td>
+                            <td>Tareas 3 y 4</td>
+                            <td>2 de 3</td>
+                            <td><span class="sev sev-2">2 · Menor</span></td>
+                            <td>Se fijó la pestaña <code>Mis Recursos</code> en la barra de navegación inferior y se
+                                añadió el botón primario <code>Ver mis materiales publicados</code> al finalizar una
+                                subida.</td>
+                        </tr>
+                        <tr>
+                            <td>Duda sobre si el recurso ya se había guardado al tocar el botón.</td>
+                            <td>Tarea 1 (Guardar)</td>
+                            <td>2 de 3</td>
+                            <td><span class="sev sev-2">2 · Menor</span></td>
+                            <td>Se implementó cambio de estado del botón a <code>✓ Guardado en Mis Recursos</code> más
+                                un banner verde de confirmación con acceso directo.</td>
+                        </tr>
+                        <tr>
+                            <td>Baja jerarquía visual de autor y fecha en los comentarios existentes.</td>
+                            <td>Tarea 2 (Comentar)</td>
+                            <td>1 de 3</td>
+                            <td><span class="sev sev-1">1 · Cosmético</span></td>
+                            <td>Se destacó el nombre del autor en SemiBold y la marca temporal en texto secundario
+                                estructurado.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><a href="anexos/Informe_Prueba_Usabilidad.pdf" class="evidence-link">Descargar informe completo y hojas
+                    de observación de la prueba con wireframes (PDF)</a></p>
+
+            <h3>6.3 Plan de la Prueba de Usabilidad con la Demo Funcional (Entrega Final)</h3>
+            <p>
+                Para validar la versión funcional de EduSpace antes de la entrega final del 14 de diciembre de 2026,
+                ejecutaremos el siguiente protocolo de evaluación sumativa:
+            </p>
+
+            <div class="card">
+                <p><strong>Objetivo de la prueba:</strong> Evaluar la efectividad, eficiencia y satisfacción percibida
+                    de estudiantes universitarios al completar de punta a punta los flujos principales en la demo
+                    funcional de EduSpace, identificando fricciones restantes en navegación, búsqueda, guardado,
+                    valoración y publicación de apuntes.</p>
+                <p><strong>Perfil y reclutamiento de participantes:</strong> <strong>5 estudiantes
+                        universitarios</strong> de carreras de ingeniería (FIUNI, 18 a 25 años) que cursen materias con
+                    alta carga práctica y que <em>no sean compañeros del curso de HCI ni hayan participado en
+                        evaluaciones previas</em>. Se reclutarán mediante invitación directa en salas de estudio y
+                    biblioteca de la facultad, garantizando anonimato (identificados únicamente como P1 a P5) y
+                    consentimiento informado previo.</p>
+                <p><strong>Modalidad y roles:</strong> Sesiones individuales presenciales o por videollamada con
+                    pantalla compartida (~20 minutos por sesión) aplicando protocolo de <strong>pensamiento en voz alta
+                        (Think-Aloud)</strong>, con un miembro del equipo actuando como <em>Facilitador</em> y otro como
+                    <em>Observador/Registrador</em>.
+                </p>
+            </div>
+
+            <h4>Tareas planteadas como escenarios (sin nombrar elementos de interfaz)</h4>
+            <ol>
+                <li><strong>Escenario 1 (Búsqueda, filtrado y guardado):</strong> <em>“La semana que viene tenés parcial
+                        de Análisis Matemático I y necesitás repasar derivadas con ejercicios bien explicados. Buscá una
+                        explicación detallada que tenga buenas recomendaciones de otros estudiantes, revisá su contenido
+                        y guardala para tenerla a mano cuando estudies.”</em></li>
+                <li><strong>Escenario 2 (Consulta en biblioteca personal):</strong> <em>“Más tarde, en un hueco entre
+                        clases, querés volver a abrir el apunte que guardaste hace un momento para repasarlo. Encontralo
+                        y abrilo.”</em></li>
+                <li><strong>Escenario 3 (Valoración y aporte en comunidad):</strong> <em>“El apunte te ayudó a entender
+                        el tema y querés que otros compañeros lo sepan. Dejale una puntuación y escribí una opinión
+                        breve contando qué te pareció.”</em></li>
+                <li><strong>Escenario 4 (Contribución de material propio):</strong> <em>“Tenés un resumen en PDF sobre
+                        Álgebra Lineal que preparaste para el parcial y querés compartirlo con otros estudiantes de la
+                        facultad. Subilo para que quede disponible en la plataforma y verificá dónde quedó
+                        publicado.”</em></li>
+            </ol>
+
+            <h4>Métricas a registrar</h4>
+            <ul>
+                <li><strong>Por tarea:</strong> Tasa de completitud (<em>Autónoma / Con asistencia / No
+                        completada</em>), tiempo de ejecución en segundos (meta RNF-UX 01: ≤ 40 s en búsqueda), cantidad
+                    de errores o clics erróneos, y cuestionario post-tarea <strong>SEQ (Single Ease Question, escala 1 a
+                        7)</strong>.</li>
+                <li><strong>Al finalizar la sesión:</strong> Cuestionario estandarizado <strong>SUS (System Usability
+                        Scale, 10 ítems, puntaje 0–100)</strong> con meta objetivo ≥ 75 puntos, más consolidación de
+                    problemas por frecuencia y severidad (1 cosmético, 2 menor, 3 mayor, 4 bloqueante) para corregir
+                    todos los problemas de severidad 3 y 4 en la versión final.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Portafolio académico de Interacción Hombre-Computadora (HCI) · Facultad de Ingeniería — Universidad Nacional
+            de Itapúa (FIUNI) · 2026</p>
+    </footer>
+
+</body>
+
+</html>
