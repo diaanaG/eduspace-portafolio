@@ -10,8 +10,10 @@ Aplicación móvil colaborativa de apuntes, explicaciones paso a paso y comunida
 
 ## Enlaces del proyecto
 
-- **Portafolio publicado (GitHub Pages):** https://tu-usuario.github.io/eduspace-portafolio/
-- **Prototipo interactivo de Alta Fidelidad (Figma):** https://www.figma.com/proto/6JXshp9UGSYImBFDKWsrTP/HCI-Prototipos?node-id=124-2247&p=f&t=pxmFL0vFPEdEqeyJ-1&scaling=min-zoom&content-scaling=fixed&page-id=124%3A1426
+- **Portafolio publicado (GitHub Pages):** https://diaanag.github.io/eduspace-portafolio/
+
+- **Prototipo interactivo de Alta Fidelidad (Figma):** https://www.figma.com/proto/6JXshp9UGSYlmBFDKWsrTP/HCI-Prototipos?node-id=124-2247&p=f&t=6f5LKToJMORulQQC-1&scaling=min-zoom&content-scaling=fixed&page-id=124%3A1426
+
 - **Demo funcional (Entrega Final):** Próximamente en `/demo` (14 de diciembre de 2026)
 
 ## Organización del repositorio
